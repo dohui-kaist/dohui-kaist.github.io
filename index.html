@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Dohui Lee</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dohui Lee</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background-color: #1e1e1e;
+      color: #ddd;
+      margin: 0; padding: 0;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 2rem;
+    }
+    img.profile {
+      width: 100%;
+      border-radius: 8px;
+    }
+    h1 { margin: 0 0 1rem; font-size: 2rem; }
+    h2 { border-bottom: 2px solid #444; padding-bottom: 0.3rem; margin-top: 2rem; }
+    a { color: #4ea1ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .contact a {
+      display: block;
+      padding: 0.5rem;
+      background: #2a2a2a;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+    .highlight { background: #2d3e52; padding: 0.2rem 0.4rem; border-radius: 4px; }
+  </style>
 </head>
 <body>
-  <p>Hello, World!</p>
+  <div class="container">
+    <aside>
+      <h1>Dohui Lee</h1>
+      <img src="profile.jpg" alt="Profile" class="profile" />
+      <div class="contact">
+        <h2>Contact</h2>
+        <a href="mailto:dohui.lee@kaist.ac.kr">dohui.lee@kaist.ac.kr</a>
+        <a href="https://github.com/username">GitHub</a>
+        <a href="https://linkedin.com/in/username">LinkedIn</a>
+      </div>
+    </aside>
+    <main>
+      <p>
+        Hello! I’m Dohui Lee, a Master’s student in <a href="#">HCI Tech Lab</a> at KAIST,
+        advised by Prof. Sang Ho Yoon.  
+        I’m interested in haptics and human-computer interaction (HCI) in AR/VR.
+      </p>
+
+      <h2>Publications</h2>
+      <h3><span class="highlight">International Conferences & Journals</span></h3>
+      <p>
+        <strong>ARGo: augmented reality-based mobile Go stone collision game.</strong><br/>
+        <em>Dohui Lee</em>, Sohyun Won, Jiwon Kim, and Hyuk-Yoon Kwon<br/>
+        <i>Virtual Reality (Springer), 28, 37 (2024)</i>
+      </p>
+
+      <h3><span class="highlight">International Posters</span></h3>
+      <p>Coming soon...</p>
+
+      <h3><span class="highlight">Domestic Conferences & Journals</span></h3>
+      <p>Coming soon...</p>
+    </main>
+  </div>
 </body>
 </html>
